@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 264 142" enable-background="new 0 0 264 142" xml:space="preserve" preserveAspectRatio="xMinYMax meet">
+<style type="text/css">
+	.st0{fill:#004180;}
+</style>
+<g>
+	<path class="st0" d="M67.5,90H41.5V52.1h9.7v29.2h16.2V90z"/>
+	<path class="st0" d="M82.3,52.1v23.6c0,3.3,2.8,6.5,6.6,6.5c3.5,0,6.6-3.2,6.6-6.5V52.1h9.7v23.6c0,9.7-9.1,14.8-16.4,14.8
+		s-16.3-4.9-16.3-14.8V52.1H82.3z"/>
+	<path class="st0" d="M192.9,71.1c0,11.9-8.9,19.6-19.6,19.6c-10.7,0-19.7-7.6-19.7-19.6c0-11.9,8.9-19.7,19.7-19.7
+		C184,51.3,192.9,59.3,192.9,71.1z M173.3,82c4.9,0,9.9-2.7,9.9-10.9c0-7.9-5-10.9-9.9-10.9c-5.1,0-9.9,3.6-9.9,10.9
+		C163.4,78.3,168.5,82,173.3,82z"/>
+	<path class="st0" d="M224.8,60.5h-15.6v7.1h15.2v8.3h-15.2V90h-9.5V52.1h25.1V60.5z"/>
+	<path class="st0" d="M263.1,52.1v8.3h-10.7V90h-9.7V60.4h-10.5v-8.3H263.1z"/>
+	<polygon class="st0" points="51.5,32.6 70.6,13.4 89.5,32.3 89.5,20.2 70.6,1.4 51.5,20.4 	"/>
+	<polygon class="st0" points="31.9,90 12.9,71 32,52 19.9,52 0.9,71 19.9,90 	"/>
+	<polygon class="st0" points="89.5,109.8 70.6,128.5 51.5,109.5 51.5,121.5 70.6,140.6 89.5,121.8 	"/>
+	<g>
+		<polygon class="st0" points="134.9,82.3 142.5,90 154.6,90 141,76.3 		"/>
+		<polygon class="st0" points="141,65.7 154.8,52 142.8,52 134.9,59.7 		"/>
+	</g>
+	<polygon class="st0" points="109.2,52.1 128.1,71 109.2,90 121.3,90 140.1,71 121.3,52.1 	"/>
+</g>
+</svg>
