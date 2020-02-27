@@ -77,10 +77,10 @@ waitForScroll().then(function() {
 
     button.scrollIntoView(false)
     if (sharedFriendsCount >= minSharedFriends) {
-      console.log('Заявка отправлена: ' + personName)
+      console.log('Friend request sent: ' + personName)
       button.click()
     } else {
-      console.log('Не хватает общих друзей: ' + personName)
+      console.log('Not enough mutual friends: ' + personName)
     }
 
     try {
