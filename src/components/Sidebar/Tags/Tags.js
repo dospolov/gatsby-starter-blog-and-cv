@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Tag } from 'antd'
 import { useTagsList } from '../../../hooks'
 
-const getLinkFromTagName = tagName => tagName.toLowerCase().replace(/ /i, '-')
+const removeDashes = slug => slug.toLowerCase().replace(/-/i, ' ')
 
 const Tags = () => {
   const tags = useTagsList()
@@ -13,11 +13,11 @@ const Tags = () => {
       {tags.map(tag => (
         <Link
           key={tag.fieldValue}
-          to={`/tag/${getLinkFromTagName(tag.fieldValue)}`}
+          to={`/tag/${tag.fieldValue}`}
           className="align-bottom"
           activeClassName="current-page"
         >
-          <Tag>{tag.fieldValue}</Tag>
+          <Tag>{removeDashes(tag.fieldValue)}</Tag>
         </Link>
       ))}
     </nav>

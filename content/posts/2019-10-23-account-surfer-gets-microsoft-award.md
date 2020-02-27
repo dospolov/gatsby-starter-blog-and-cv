@@ -9,7 +9,7 @@ description: >-
   365 app award
 category: productivity
 tags:
-  - account surfer
+  - account-surfer
   - chrome
   - windows
 ---
