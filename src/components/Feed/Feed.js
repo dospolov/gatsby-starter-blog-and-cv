@@ -26,7 +26,9 @@ const Feed = ({ edges }) =>
         <Row>
           {imgSrc && (
             <Col xs={24} sm={24} md={4} lg={4} xl={4}>
-              <img src={imgSrc} alt="" title="" className="mb-5 poster" />
+              <Link to={slug}>
+                <img src={imgSrc} alt="" title="" className="mb-5 poster" />
+              </Link>
             </Col>
           )}
           <Col
