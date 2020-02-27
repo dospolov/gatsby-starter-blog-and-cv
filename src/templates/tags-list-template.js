@@ -16,7 +16,7 @@ const TagsListTemplate = () => {
         <ul>
           {tags.map(tag => (
             <li key={tag.fieldValue}>
-              <Link to={`/tag/${tag.fieldValue}/`}>
+              <Link to={`/tag/${tag.fieldValue}`}>
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>

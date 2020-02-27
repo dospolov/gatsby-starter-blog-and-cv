@@ -15,7 +15,7 @@ const Categories = () => {
         {categories.map(category => (
           <li className="mb-3" key={category.fieldValue}>
             <Link
-              to={`/category/${getLinkFromCategoryName(category.fieldValue)}/`}
+              to={`/category/${getLinkFromCategoryName(category.fieldValue)}`}
               className="align-bottom capitalize"
               activeClassName="current-page"
             >

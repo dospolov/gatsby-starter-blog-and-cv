@@ -13,7 +13,7 @@ const Tags = () => {
       {tags.map(tag => (
         <Link
           key={tag.fieldValue}
-          to={`/tag/${getLinkFromTagName(tag.fieldValue)}/`}
+          to={`/tag/${getLinkFromTagName(tag.fieldValue)}`}
           className="align-bottom"
           activeClassName="current-page"
         >
