@@ -1,5 +1,4 @@
 import React from 'react'
-// import { CompassOutlined, MailOutlined, PhoneOutlined, GithubOutlined } from '@ant-design/icons'
 import { Row, Col } from 'antd'
 
 const Header = () => (
@@ -24,23 +23,15 @@ const Header = () => (
       </a>
     </Col>
     <Col span={10} className="text-lg">
-      <div>
-        {/* <CompassOutlined />  */}
-        Ukraine, Kyiv
-      </div>
+      <div>Ukraine, Kyiv</div>
       <div>
         telegram:{' '}
         <a href="https://t.me/dospolov" target="_blank" rel="noopener noreferrer">
-          {/* <MailOutlined />  */}
           dospolov
         </a>
       </div>
       <div>
-        github:{' '}
-        <a href="https://github.com/dospolov">
-          {/* <GithubOutlined />  */}
-          dospolov
-        </a>
+        github: <a href="https://github.com/dospolov">dospolov</a>
       </div>
     </Col>
   </Row>
