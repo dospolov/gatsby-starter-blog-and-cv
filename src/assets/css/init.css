@@ -83,6 +83,10 @@ img {
   padding: 5% 7% 0%;
 }
 
+.post.post-featured {
+  background: #fff;
+}
+
 .post .poster {
   box-shadow: 0 0 0 3px #97266d33;
 }

@@ -28,7 +28,8 @@ const IndexTemplate = ({ data, pageContext }) => {
     <Layout title={pageTitle} description={siteSubtitle} keywords={keywords}>
       <Sidebar />
       <Page>
-        <Feed edges={edges} />
+        <Feed edges={edges.filter(edge => edge?.node?.frontmatter?.featured)} />
+        <Feed edges={edges.filter(edge => !edge?.node?.frontmatter?.featured)} />
         <Pagination
           prevPagePath={prevPagePath}
           nextPagePath={nextPagePath}
@@ -63,6 +64,7 @@ export const query = graphql`
             tags
             category
             description
+            featured
           }
         }
       }

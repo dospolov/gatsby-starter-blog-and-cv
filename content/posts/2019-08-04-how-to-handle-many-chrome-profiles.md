@@ -3,6 +3,7 @@ template: post
 title: How to handle multiple Chrome profiles with Account Surfer?
 slug: /posts/handle-chrome-profiles-with-account-surfer
 draft: false
+featured: true
 date: 2019-07-16T21:19:27.692Z
 description: Quickly switch between accounts and browsers on Windows with Account Surfer
 category: productivity
