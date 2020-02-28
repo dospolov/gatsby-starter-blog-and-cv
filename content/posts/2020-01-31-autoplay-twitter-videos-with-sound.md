@@ -3,7 +3,7 @@ template: post
 title: Autoplay Twitter videos with sound
 slug: /posts/twitter-videos-with-sound
 draft: false
-featured: false
+priority: 0
 date: 2020-01-31T00:40:32.893Z
 description: >-
   It might be annoying scroll Twitter videos and click on each to hear sound.

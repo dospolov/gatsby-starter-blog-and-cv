@@ -14,7 +14,7 @@ const Feed = ({ edges }) =>
       node: {
         html,
         fields: { slug, categorySlug, tagSlugs },
-        frontmatter: { date, category, title, tags, featured }
+        frontmatter: { date, category, title, tags, priority }
       }
     } = edge
 
@@ -22,7 +22,7 @@ const Feed = ({ edges }) =>
     const imgSrc = imgFound && imgFound[2]
 
     return (
-      <div className={`post ${featured && 'post-featured'}`} key={slug}>
+      <div className={`post ${priority > 0 && 'post-featured'}`} key={slug}>
         <Row>
           {imgSrc && (
             <Col xs={24} sm={24} md={4} lg={4} xl={4}>

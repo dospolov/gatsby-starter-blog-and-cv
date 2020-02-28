@@ -28,8 +28,15 @@ const IndexTemplate = ({ data, pageContext }) => {
     <Layout title={pageTitle} description={siteSubtitle} keywords={keywords}>
       <Sidebar />
       <Page>
-        <Feed edges={edges.filter(edge => edge?.node?.frontmatter?.featured)} />
-        <Feed edges={edges.filter(edge => !edge?.node?.frontmatter?.featured)} />
+        <Feed
+          edges={edges
+            .filter(edge => edge?.node?.frontmatter?.priority)
+            .sort(
+              (edge1, edge2) =>
+                edge2?.node?.frontmatter?.priority - edge1?.node?.frontmatter?.priority
+            )}
+        />
+        <Feed edges={edges.filter(edge => !edge?.node?.frontmatter?.priority)} />
         <Pagination
           prevPagePath={prevPagePath}
           nextPagePath={nextPagePath}
@@ -64,7 +71,7 @@ export const query = graphql`
             tags
             category
             description
-            featured
+            priority
           }
         }
       }
