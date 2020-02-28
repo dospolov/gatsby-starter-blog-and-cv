@@ -15,7 +15,7 @@ const getContactHref = (name, contact) => {
       href = `https://vk.com/${contact}`
       break
     case 'telegram':
-      href = `https:/t.me/${contact}`
+      href = `https://t.me/${contact}`
       break
     case 'email':
       href = `mailto:${contact}`
