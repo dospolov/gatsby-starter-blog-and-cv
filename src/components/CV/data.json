@@ -20,7 +20,8 @@
       "locationIcon": "chrome.svg",
       "description": "Read about productivity and development",
       "builtWith": ["gatsby", "react", "netlify"],
-      "link": "https://dospolov.com"
+      "link": "https://dospolov.com",
+      "sourceCode": "https://github.com/dospolov/gatsby-starter-blog-and-cv"
     }
   ],
   "tech": {
