@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import FeaturedProducts from '../components/FeaturedProducts'
 import Feed from '../components/Feed'
 import Page from '../components/Page'
 import Copyright from '../components/Copyright'
@@ -28,6 +29,7 @@ const IndexTemplate = ({ data, pageContext }) => {
     <Layout title={pageTitle} description={siteSubtitle} keywords={keywords}>
       <Sidebar />
       <Page>
+        <FeaturedProducts />
         <Feed
           edges={edges
             .filter(edge => edge?.node?.frontmatter?.priority)

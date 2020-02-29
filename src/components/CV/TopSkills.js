@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'antd'
-import data from './data'
+import data from './data.json'
 
 const TopSkills = () => (
   <div className="mt-16 mb-5">

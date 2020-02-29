@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Account Surfer",
+    "logo": "/logos/as.svg",
+    "description": "Quickly switch between accounts and browsers.",
+    "link": "/posts/handle-chrome-profiles-with-account-surfer"
+  },
+  {
+    "name": "Trello Bookmark",
+    "logo": "/logos/trello-bookmark.svg",
+    "description": "Store your bookmarks as Trello Cards.",
+    "link": "/posts/trello-plus-gtd-equals-trello-bookmark"
+  }
+]

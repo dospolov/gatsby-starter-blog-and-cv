@@ -18,11 +18,12 @@ const Feed = ({ edges }) =>
       }
     } = edge
 
+    const featured = priority > 0
     const imgFound = html && html.match(/<img\s+[^>]*?src=("|')([^"']+)/i)
     const imgSrc = imgFound && imgFound[2]
 
     return (
-      <div className={`post ${priority > 0 && 'post-featured'}`} key={slug}>
+      <div className={`post ${featured && 'post-featured mt-4'}`} key={slug}>
         <Row>
           {imgSrc && (
             <Col xs={24} sm={24} md={4} lg={4} xl={4}>
@@ -75,7 +76,7 @@ const Feed = ({ edges }) =>
           </Col>
         </Row>
 
-        <Divider className="bg-gray-300 mb-0 mt-6" />
+        <Divider className={`bg-gray-300 mb-0 mt-6 ${featured && 'invisible'}`} />
       </div>
     )
   })

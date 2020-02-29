@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Row, Col, Divider, Tag } from 'antd'
-import data from './data'
+import data from './data.json'
 
 const Experience = () => (
   <>

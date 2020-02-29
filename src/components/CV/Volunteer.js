@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Col, Divider, Row } from 'antd'
-import data from './data'
+import data from './data.json'
 
 const Volunteer = () => (
   <>
