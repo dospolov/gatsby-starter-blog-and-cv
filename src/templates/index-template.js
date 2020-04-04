@@ -18,7 +18,8 @@ const IndexTemplate = ({ data, pageContext }) => {
     hasNextPage,
     hasPrevPage,
     prevPagePath,
-    nextPagePath
+    nextPagePath,
+    allCategories
   } = pageContext
 
   const { edges } = data.allMarkdownRemark
@@ -37,8 +38,12 @@ const IndexTemplate = ({ data, pageContext }) => {
               (edge1, edge2) =>
                 edge2?.node?.frontmatter?.priority - edge1?.node?.frontmatter?.priority
             )}
+          allCategories={allCategories}
         />
-        <Feed edges={edges.filter(edge => !edge?.node?.frontmatter?.priority)} />
+        <Feed
+          edges={edges.filter(edge => !edge?.node?.frontmatter?.priority)}
+          allCategories={allCategories}
+        />
         <Pagination
           prevPagePath={prevPagePath}
           nextPagePath={nextPagePath}

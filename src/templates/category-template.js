@@ -16,7 +16,8 @@ const CategoryTemplate = ({ data, pageContext }) => {
     prevPagePath,
     nextPagePath,
     hasPrevPage,
-    hasNextPage
+    hasNextPage,
+    allCategories
   } = pageContext
 
   const { edges } = data.allMarkdownRemark
@@ -29,7 +30,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
     <Layout title={pageTitle} description={siteSubtitle} keywords={keywords}>
       <Sidebar />
       <Page title={`Category: ${category}`}>
-        <Feed edges={edges} />
+        <Feed edges={edges} allCategories={allCategories} />
         <Pagination
           prevPagePath={prevPagePath}
           nextPagePath={nextPagePath}

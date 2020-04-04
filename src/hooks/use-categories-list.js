@@ -1,4 +1,8 @@
 import { useStaticQuery, graphql } from 'gatsby'
+const {
+  CATEGORY_COLORS,
+  CATEGORY_COLOR_EXTRA
+} = require('../../gatsby/constants/categories.js')
 
 const useCategoriesList = () => {
   const { allMarkdownRemark } = useStaticQuery(
@@ -16,7 +20,10 @@ const useCategoriesList = () => {
     `
   )
 
-  return allMarkdownRemark.group
+  return allMarkdownRemark.group.map((cat, i) => ({
+    ...cat,
+    categoryColor: CATEGORY_COLORS[i] || CATEGORY_COLOR_EXTRA
+  }))
 }
 
 export default useCategoriesList

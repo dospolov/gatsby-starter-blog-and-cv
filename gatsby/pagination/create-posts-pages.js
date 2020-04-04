@@ -1,8 +1,10 @@
 const path = require('path')
 const siteConfig = require('../../config.js')
+const { getAllCategories } = require('../constants/categories.js')
 
 module.exports = async (graphql, actions) => {
   const { createPage } = actions
+  const allCategories = await getAllCategories(graphql)
 
   const result = await graphql(`
     {
@@ -22,6 +24,7 @@ module.exports = async (graphql, actions) => {
       path: i === 0 ? '/' : `/page/${i}`,
       component: path.resolve('./src/templates/index-template.js'),
       context: {
+        allCategories,
         currentPage: i,
         postsLimit: postsPerPage,
         postsOffset: i * postsPerPage,

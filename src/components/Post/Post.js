@@ -4,14 +4,16 @@ import { Layout, Tag, Divider } from 'antd'
 import Comments from './Comments'
 import Content from './Content'
 import Tags from './Tags'
-import { CATEGORIES } from '../../constants'
+import getCategoryColor from '../../utils/get-category-color'
 
 const AntContent = Layout.Content
 
-const Post = ({ post }) => {
+const Post = ({ post, allCategories }) => {
   const { html } = post
   const { tagSlugs, slug, categorySlug } = post.fields
   const { tags, title, date, category } = post.frontmatter
+
+  const categoryColor = getCategoryColor({ allCategories, category })
 
   return (
     <AntContent className="p-10">
@@ -26,7 +28,7 @@ const Post = ({ post }) => {
       <div className="">
         <Link to={categorySlug} className="">
           <Tag
-            className={`bg-${CATEGORIES[category]} text-white border-transparent cursor-pointer`}
+            className={`bg-${categoryColor} text-white border-transparent cursor-pointer`}
           >
             {category}
           </Tag>

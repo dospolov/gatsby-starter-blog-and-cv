@@ -4,11 +4,11 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 import { Divider, Row, Col, Tag } from 'antd'
 import { Link } from 'gatsby'
 import Tags from './Tags'
-import { CATEGORIES } from '../../constants'
+import getCategoryColor from '../../utils/get-category-color'
 
 dayjs.extend(relativeTime)
 
-const Feed = ({ edges }) =>
+const Feed = ({ edges, allCategories }) =>
   edges.map(edge => {
     const {
       node: {
@@ -17,10 +17,10 @@ const Feed = ({ edges }) =>
         frontmatter: { date, category, title, tags, priority }
       }
     } = edge
-
     const featured = priority > 0
     const imgFound = html && html.match(/<img\s+[^>]*?src=("|')([^"']+)/i)
     const imgSrc = imgFound && imgFound[2]
+    const categoryColor = getCategoryColor({ allCategories, category })
 
     return (
       <div className={`post ${featured && 'post-featured mt-4'}`} key={slug}>
@@ -52,7 +52,7 @@ const Feed = ({ edges }) =>
               <Col span={8}>
                 <Link to={categorySlug} className="">
                   <Tag
-                    className={`bg-${CATEGORIES[category]} text-white border-transparent cursor-pointer uppercase px-4 py-1 rounded-full text-base font-semibold`}
+                    className={`bg-${categoryColor} text-white border-transparent cursor-pointer px-4 py-1 rounded-full text-base font-semibold`}
                   >
                     {category}
                   </Tag>

@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import { Tag } from 'antd'
 import { useTagsList } from '../../../hooks'
 
-const removeDashes = slug => slug.toLowerCase().replace(/-/i, ' ')
-
 const Tags = () => {
   const tags = useTagsList()
   return (
@@ -17,7 +15,7 @@ const Tags = () => {
           className="align-bottom"
           activeClassName="current-page"
         >
-          <Tag>{removeDashes(tag.fieldValue)}</Tag>
+          <Tag>{tag.fieldValue}</Tag>
         </Link>
       ))}
     </nav>

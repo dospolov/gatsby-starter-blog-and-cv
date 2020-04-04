@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { CATEGORIES } from '../../../constants'
 import { useCategoriesList } from '../../../hooks'
-
-const getLinkFromCategoryName = categoryName =>
-  categoryName.toLowerCase().replace(/ /i, '-')
 
 const Categories = () => {
   const categories = useCategoriesList()
@@ -15,14 +11,12 @@ const Categories = () => {
         {categories.map(category => (
           <li className="mb-3" key={category.fieldValue}>
             <Link
-              to={`/category/${getLinkFromCategoryName(category.fieldValue)}`}
-              className="align-bottom capitalize"
+              to={`/category/${category.fieldValue}`}
+              className="align-bottom"
               activeClassName="current-page"
             >
               <span
-                className={`bg-${
-                  CATEGORIES[category.fieldValue]
-                } rounded-full w-4 h-4 inline-block mr-2`}
+                className={`bg-${category.categoryColor} rounded-full w-4 h-4 inline-block mr-2`}
               />
               {category.fieldValue}
               <span className="text-lg inline-block ml-2 text-gray-300 font-light">

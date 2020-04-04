@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar'
 import Post from '../components/Post'
 import { useSiteMetadata } from '../hooks'
 
-const PostTemplate = ({ data }) => {
+const PostTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle, keywords } = useSiteMetadata()
   const {
     title: postTitle,
@@ -20,7 +20,7 @@ const PostTemplate = ({ data }) => {
       keywords={keywords}
     >
       <Sidebar hideMobile={true} />
-      <Post post={data.markdownRemark} />
+      <Post post={data.markdownRemark} allCategories={pageContext.allCategories} />
     </Layout>
   )
 }
