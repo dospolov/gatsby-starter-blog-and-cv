@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 
-const Header = () => (
+const Header = ({ header }) => (
   <Row type="flex" justify="space-around" align="middle">
     <Col span={2} className="hide-mobile">
       <a href="/cv.pdf" target="_blank" className="no-print">
@@ -9,30 +9,31 @@ const Header = () => (
       </a>
     </Col>
     <Col span={8} className="text-right">
-      <h2 className="text-2xl">MARAT DOSPOLOV</h2>
-      <h5>JAVASCRIPT TECH LEADER</h5>
+      <h2 className="text-2xl">{header.name}</h2>
+      <h5>{header.position}</h5>
     </Col>
     <Col span={4} className="text-center">
       <a href="/">
         <img
-          src="/photo.jpg"
-          alt="Marat Dospolov"
+          src={header.img.src}
+          alt={header.img.alt}
           width={80}
           className="rounded-full max-w-3/4"
         />
       </a>
     </Col>
     <Col span={10} className="text-lg">
-      <div>Ukraine, Kyiv</div>
-      <div>
-        telegram:{' '}
-        <a href="https://t.me/dospolov" target="_blank" rel="noopener noreferrer">
-          dospolov
-        </a>
-      </div>
-      <div>
-        github: <a href="https://github.com/dospolov">dospolov</a>
-      </div>
+      <div>{header.location}</div>
+      <>
+        {header.contacts.map(contact => (
+          <div key={contact.type}>
+            {contact.type}:{' '}
+            <a href={contact.link} target="_blank" rel="noopener noreferrer">
+              {contact.linkName}
+            </a>
+          </div>
+        ))}
+      </>
     </Col>
   </Row>
 )

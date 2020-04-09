@@ -1,4 +1,25 @@
 {
+  "header": {
+    "name": "MARAT DOSPOLOV",
+    "position": "JAVASCRIPT TECH LEADER",
+    "img": {
+      "src": "/photo.jpg",
+      "alt": "Marat Dospolov"
+    },
+    "location": "Ukraine, Kyiv",
+    "contacts": [
+      {
+        "type": "telegram",
+        "link": "https://t.me/dospolov",
+        "linkName": "dospolov"
+      },
+      {
+        "type": "github",
+        "link": "https://github.com/dospolov",
+        "linkName": "dospolov"
+      }
+    ]
+  },
   "experiments": [
     {
       "name": "Account Surfer",
@@ -23,6 +44,17 @@
       "link": "https://dospolov.com",
       "sourceCode": "https://github.com/dospolov/gatsby-starter-blog-and-cv"
     }
+  ],
+  "pitchLine": "My passions are — web-development, cognitive biases and anthropology.",
+  "topTech": [
+    "react",
+    "graphql",
+    "apollo",
+    "redux",
+    "reduxsaga",
+    "electron",
+    "gatsby",
+    "antd"
   ],
   "tech": {
     "react": {
@@ -87,100 +119,69 @@
     }
   },
   "skills": {
-    "soft": [
-      {
-        "skillText": "Focus on business needs",
-        "selfValue": 100,
-        "feedbackValue": 100
-      },
-      {
-        "skillText": "Team building / Leadership",
-        "selfValue": 80,
-        "feedbackValue": 85
-      },
-      {
-        "skillText": "Coaching",
-        "selfValue": 80,
-        "feedbackValue": 100
-      },
-      {
-        "skillText": "Decision making",
-        "selfValue": 90,
-        "feedbackValue": 90
-      },
-      {
-        "skillText": "Communication",
-        "selfValue": 90,
-        "feedbackValue": 95
-      },
-      {
-        "skillText": "Integrity",
-        "selfValue": 95,
-        "feedbackValue": 95
-      }
-    ],
-    "hard": [
-      {
-        "skillText": "Webpack",
-        "selfValue": 85,
-        "feedbackValue": 90
-      },
-      {
-        "skillText": "ES6 / ES2017",
-        "selfValue": 80,
-        "feedbackValue": 85
-      }
-    ],
-    "otherHard": [
-      "Adobe Photoshop",
-      "Angular.js",
-      "AWS",
-      "Bootstrap",
-      "Backbone.js",
-      "CSS 3",
-      "GIT",
-      "Gulp",
-      "Google Maps API",
-      "D3.js",
-      "Ember.js",
-      "Fabric UI",
-      "Figma",
-      "Handlebars",
-      "HG",
-      "HTML 5",
-      "Illustrator",
-      "Jest",
-      "JIRA",
-      "LESS",
-      "Material UI",
-      "Meteor.js",
-      "Regexp",
-      "REST",
-      "SASS",
-      "Semantic UI",
-      "Socket.io",
-      "Stylus",
-      "Styled Components",
-      "Vanilla JS",
-      "Underscore / Lodash",
-      "Counter-Strike"
-    ],
-    "otherSoft": [
-      "Scheduling",
-      "Risk Management",
-      "Critical Thinking",
-      "Problem Solving",
-      "Project Recovery",
-      "Task Management",
-      "Business Process Improvement",
-      "Budgeting",
-      "UX Prototyping",
-      "Requirements Analysis",
-      "Conflict Management",
-      "Policy Knowledge"
-    ]
+    "soft": {
+      "featured": [
+        "Focus on business needs",
+        "Team building / Leadership",
+        "Coaching",
+        "Decision making",
+        "Communication",
+        "Integrity"
+      ],
+      "other": [
+        "Scheduling",
+        "Risk Management",
+        "Critical Thinking",
+        "Problem Solving",
+        "Project Recovery",
+        "Task Management",
+        "Business Process Improvement",
+        "Budgeting",
+        "UX Prototyping",
+        "Requirements Analysis",
+        "Conflict Management",
+        "Policy Knowledge"
+      ]
+    },
+    "hard": {
+      "featured": ["Webpack", "ES6 / ES2017"],
+      "other": [
+        "Adobe Photoshop",
+        "Angular.js",
+        "AWS",
+        "Bootstrap",
+        "Backbone.js",
+        "CSS 3",
+        "GIT",
+        "Gulp",
+        "Google Maps API",
+        "D3.js",
+        "Ember.js",
+        "Fabric UI",
+        "Figma",
+        "Handlebars",
+        "HG",
+        "HTML 5",
+        "Illustrator",
+        "Jest",
+        "JIRA",
+        "LESS",
+        "Material UI",
+        "Meteor.js",
+        "Regexp",
+        "REST",
+        "SASS",
+        "Semantic UI",
+        "Socket.io",
+        "Stylus",
+        "Styled Components",
+        "Vanilla JS",
+        "Underscore / Lodash",
+        "Counter-Strike"
+      ]
+    }
   },
-  "workExperience": [
+  "experience": [
     {
       "company": {
         "name": "N-iX",
@@ -358,6 +359,15 @@
       ]
     }
   ],
+  "volunteer": [
+    {
+      "place": "Bionic University",
+      "logo": "bionic.png",
+      "logoHeight": 50,
+      "period": "2015",
+      "description": "I conducted a series of lectures for BIONIC University. Main topics: HTML / CSS / jQuery / Handlebars / Ajax / Production experience / Best practices"
+    }
+  ],
   "education": [
     {
       "place": "Kiev Institute of Business and Technologies (KIBT)",
@@ -370,13 +380,5 @@
       "degree": "Master's Degree, Computer Science And Information Technologies, Software and computing systems (software engineer)"
     }
   ],
-  "volunteer": [
-    {
-      "place": "Bionic University",
-      "logo": "bionic.png",
-      "logoHeight": 50,
-      "period": "2015",
-      "description": "I conducted a series of lectures for BIONIC University. Main topics: HTML / CSS / jQuery / Handlebars / Ajax / Production experience / Best practices"
-    }
-  ]
+  "footer": "Dospolov.com © 2020"
 }

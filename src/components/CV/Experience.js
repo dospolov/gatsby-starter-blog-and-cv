@@ -1,12 +1,11 @@
 import React from 'react'
 import { Card, Row, Col, Divider, Tag } from 'antd'
-import data from './data.json'
 
-const Experience = () => (
+const Experience = ({ experience }) => (
   <>
     <h3 className="text-center mt-10 mb-5">Work experience</h3>
     <Card className="work-experience">
-      {data.workExperience.map((item, i) => (
+      {experience.map((item, i) => (
         <Row type="flex" justify="space-around" key={item.company.name}>
           <Divider orientation="left" className={i === 0 && 'mt-0'}>
             {item.company.period}

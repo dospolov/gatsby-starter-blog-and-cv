@@ -1,8 +1,7 @@
 import React from 'react'
 import { Card, Row, Col, Tag } from 'antd'
-import data from './data.json'
 
-const SkillList = () => (
+const SkillList = ({ skills }) => (
   <div>
     <Row type="flex" justify="space-around">
       <Col span={11}>
@@ -16,13 +15,13 @@ const SkillList = () => (
       <Row type="flex" justify="space-around">
         <Col span={11}>
           <div>
-            {data.skills.soft.map(skillData => (
-              <Tag color="#722ed1" key={skillData.skillText} className="mb-1 text-base">
-                {skillData.skillText}
+            {skills.soft.featured.map(skill => (
+              <Tag color="#722ed1" key={skill} className="mb-1 text-base">
+                {skill}
               </Tag>
             ))}
           </div>
-          {data.skills.otherSoft.map(skill => (
+          {skills.soft.other.map(skill => (
             <Tag color="purple" key={skill} className="mb-1 text-base">
               {skill}
             </Tag>
@@ -30,13 +29,13 @@ const SkillList = () => (
         </Col>
         <Col span={11} offset={1}>
           <div>
-            {data.skills.hard.map(skillData => (
-              <Tag color="#1890ff" key={skillData.skillText} className="mb-1 text-base">
-                {skillData.skillText}
+            {skills.hard.featured.map(skill => (
+              <Tag color="#1890ff" key={skill} className="mb-1 text-base">
+                {skill}
               </Tag>
             ))}
           </div>
-          {data.skills.otherHard.map(skill => (
+          {skills.hard.other.map(skill => (
             <Tag color="blue" key={skill} className="mb-1 text-base">
               {skill}
             </Tag>

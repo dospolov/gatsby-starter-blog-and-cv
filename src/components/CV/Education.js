@@ -1,12 +1,11 @@
 import React from 'react'
 import { Card, Row, Col, Divider } from 'antd'
-import data from './data.json'
 
-const Education = () => (
+const Education = ({ education }) => (
   <>
     <h3 className="text-center mt-1 mb-0">Education</h3>
     <Card className="education">
-      {data.education.map((institution, i) => (
+      {education.map((institution, i) => (
         <Row
           type="flex"
           justify="space-around"
