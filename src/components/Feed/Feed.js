@@ -25,7 +25,7 @@ const Feed = ({ edges, allCategories }) =>
     return (
       <div className={`post ${featured && 'post-featured'} relative`} key={slug}>
         {featured && (
-          <div class="ribbon">
+          <div className="ribbon">
             <span>featured</span>
           </div>
         )}
