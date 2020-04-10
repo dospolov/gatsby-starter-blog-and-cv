@@ -36,10 +36,10 @@
     "disqus"
   ],
   "dependencies": {
-    "@ant-design/icons": "^4.0.5",
-    "antd": "^4.1.1",
-    "dayjs": "^1.8.23",
-    "gatsby": "^2.20.15",
+    "@ant-design/icons": "^4.0.6",
+    "antd": "^4.1.2",
+    "dayjs": "^1.8.24",
+    "gatsby": "^2.20.16",
     "gatsby-link": "^2.3.2",
     "gatsby-plugin-catch-links": "^2.2.1",
     "gatsby-plugin-feed": "^2.4.1",
@@ -62,12 +62,12 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.4",
-    "netlify-cms-app": "^2.12.5",
+    "netlify-cms-app": "^2.12.6",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.0.0",
     "reading-time": "^1.2.0"
   },
   "devDependencies": {
