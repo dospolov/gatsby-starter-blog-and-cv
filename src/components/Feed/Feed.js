@@ -23,7 +23,12 @@ const Feed = ({ edges, allCategories }) =>
     const categoryColor = getCategoryColor({ allCategories, category })
 
     return (
-      <div className={`post ${featured && 'post-featured mt-4'}`} key={slug}>
+      <div className={`post ${featured && 'post-featured'} relative`} key={slug}>
+        {featured && (
+          <div class="ribbon">
+            <span>featured</span>
+          </div>
+        )}
         <Row>
           {imgSrc && (
             <Col xs={24} sm={24} md={4} lg={4} xl={4}>

@@ -1,6 +1,7 @@
 @tailwind components;
 @tailwind utilities;
 @import 'poppins-font.css';
+@import 'ribbon.css';
 
 html {
   font-size: 62.5%;
@@ -84,6 +85,7 @@ img {
 }
 
 .post.post-featured {
+  margin: 5px 0;
   background: #fff;
 }
 
