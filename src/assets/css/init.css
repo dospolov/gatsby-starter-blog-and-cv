@@ -88,8 +88,12 @@ img {
 }
 
 .featured-product {
-  background: #2c2c2e;
+  background: transparent;
   color: #ddd;
+}
+
+.featured-product .ant-row {
+  background: #2c2c2ec4;
 }
 
 .post .poster {
