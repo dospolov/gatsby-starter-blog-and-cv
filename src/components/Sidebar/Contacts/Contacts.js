@@ -1,6 +1,5 @@
 import React from 'react'
 import { getContactHref, getIcon } from '../../../utils'
-import Icon from '../../Icon'
 
 const Contacts = ({ contacts }) => (
   <div className="text-center">
@@ -13,7 +12,7 @@ const Contacts = ({ contacts }) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Icon icon={getIcon(name)} />
+            {getIcon(name)}
           </a>
         </li>
       ))}

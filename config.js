@@ -27,6 +27,7 @@ module.exports = {
       github: 'dospolov',
       twitter: 'marat_dospolov',
       telegram: 'dospolov',
+      instagram: 'dospolov',
       facebook: 'dospolov',
       rss: '/rss.xml'
     }

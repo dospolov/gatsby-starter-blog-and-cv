@@ -1,36 +1,45 @@
-import { ICONS } from '../constants'
+import React from 'react'
+import {
+  TwitterOutlined,
+  GithubOutlined,
+  FacebookOutlined,
+  InstagramOutlined,
+  MailOutlined
+} from '@ant-design/icons'
+import TelegramIcon from '../components/CustomIcons/Telegram'
+import RssIcon from '../components/CustomIcons/Rss.js'
 
 const getIcon = name => {
   let icon
 
   switch (name) {
     case 'twitter':
-      icon = ICONS.TWITTER
+      icon = <TwitterOutlined />
       break
     case 'github':
-      icon = ICONS.GITHUB
-      break
-    case 'vkontakte':
-      icon = ICONS.VKONTAKTE
+      icon = <GithubOutlined />
       break
     case 'facebook':
-      icon = ICONS.FACEBOOK
+      icon = <FacebookOutlined />
+      break
+    case 'instagram':
+      icon = <InstagramOutlined />
       break
     case 'telegram':
-      icon = ICONS.TELEGRAM
+      icon = <TelegramIcon />
       break
     case 'email':
-      icon = ICONS.EMAIL
+      icon = <MailOutlined />
       break
     case 'rss':
-      icon = ICONS.RSS
+      icon = <RssIcon />
       break
     default:
-      icon = {}
+      icon = ''
       break
   }
 
-  return icon
+  return <>{icon}</>
 }
 
 export default getIcon
