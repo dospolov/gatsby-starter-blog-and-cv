@@ -47,6 +47,7 @@
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-netlify": "^2.2.1",
     "gatsby-plugin-netlify-cms": "^4.2.2",
+    "gatsby-plugin-optimize-svgs": "^1.0.4",
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-sharp": "^2.5.4",
