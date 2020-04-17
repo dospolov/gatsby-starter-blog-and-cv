@@ -14,8 +14,10 @@ const useSiteMetadata = () => {
                 facebook
                 telegram
                 twitter
+                linkedin
                 instagram
                 github
+                email
                 rss
               }
             }

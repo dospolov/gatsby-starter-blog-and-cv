@@ -3,6 +3,7 @@ import {
   TwitterOutlined,
   GithubOutlined,
   FacebookOutlined,
+  LinkedinOutlined,
   InstagramOutlined,
   MailOutlined
 } from '@ant-design/icons'
@@ -21,6 +22,9 @@ const getIcon = name => {
       break
     case 'facebook':
       icon = <FacebookOutlined />
+      break
+    case 'linkedin':
+      icon = <LinkedinOutlined />
       break
     case 'instagram':
       icon = <InstagramOutlined />

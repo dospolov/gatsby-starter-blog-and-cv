@@ -24,11 +24,15 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Developer. Optimizer. Learner.',
     contacts: {
+      // don't remove fields, just make them empty string ''
+      // https://github.com/gatsbyjs/gatsby/issues/2392
       github: 'dospolov',
       twitter: 'marat_dospolov',
+      linkedin: 'dospolov',
       telegram: 'dospolov',
       instagram: 'dospolov',
       facebook: 'dospolov',
+      email: '',
       rss: '/rss.xml'
     }
   }
