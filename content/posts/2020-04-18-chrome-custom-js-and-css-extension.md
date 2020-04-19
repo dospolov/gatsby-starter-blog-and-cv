@@ -5,8 +5,7 @@ slug: /posts/chrome-custom-js-and-css-extension
 draft: false
 priority: 0
 date: 2020-04-18T22:22:02.039Z
-description: |-
-  Chrome custom JS and CSS extension
+description: Chrome custom JS and CSS extension
 category: productivity
 tags:
   - chrome
@@ -30,6 +29,7 @@ So I’ve made a ”[DNA](https://github.com/dospolov/dna)” Chrome extension. 
 
 1. Create a repository using [DNA](https://github.com/dospolov/dna) as a `template` at your GitHub account.
 2. Write your CSS and JS rules in `rules` array:
+![rules sample](/media/dna-1/dna-1.png 'rules sample')
 3. Load the `build` folder as an [unpacked extension](https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/)
 4. Profit!
 
