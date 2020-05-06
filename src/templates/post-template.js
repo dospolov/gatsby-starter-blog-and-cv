@@ -7,6 +7,7 @@ import { useSiteMetadata } from '../hooks'
 
 const PostTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle, keywords } = useSiteMetadata()
+  console.log(data)
   const {
     title: postTitle,
     description: postDescription

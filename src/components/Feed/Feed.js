@@ -2,6 +2,7 @@ import React from 'react'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { Divider, Row, Col, Tag } from 'antd'
+import { SelectOutlined } from '@ant-design/icons'
 import { Link } from 'gatsby'
 import Tags from './Tags'
 import getCategoryColor from '../../utils/get-category-color'
@@ -14,13 +15,26 @@ const Feed = ({ edges, allCategories }) =>
       node: {
         html,
         fields: { slug, categorySlug, tagSlugs },
-        frontmatter: { date, category, title, tags, priority }
+        frontmatter: { date, category, tags, priority }
+      }
+    } = edge
+    let {
+      node: {
+        frontmatter: { title }
       }
     } = edge
     const featured = priority > 0
     const imgFound = html && html.match(/<img\s+[^>]*?src=("|')([^"']+)/i)
     const imgSrc = imgFound && imgFound[2]
     const categoryColor = getCategoryColor({ allCategories, category })
+    let externalLink = null
+
+    const isTitleLinkPattern = /(?=.*\[)(?=.*\])(?=.*\()(?=.*\))/i
+    if (isTitleLinkPattern.test(title)) {
+      const found = title.match(/\[(.*)]\((.*)\)/)
+      title = found[1]
+      externalLink = found[2]
+    }
 
     return (
       <div className={`post ${featured && 'post-featured'} relative`} key={slug}>
@@ -68,9 +82,20 @@ const Feed = ({ edges, allCategories }) =>
               </Col>
             </Row>
             <h1 className="text-5xl mt-3 mb-0">
-              <Link to={slug} className="text-black">
-                {title}
-              </Link>
+              {externalLink ? (
+                <a
+                  href={externalLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black"
+                >
+                  <SelectOutlined className="text-3xl" /> {title}
+                </a>
+              ) : (
+                <Link to={slug} className="text-black">
+                  {title}
+                </Link>
+              )}
             </h1>
             <p className="text-gray-500 text-right">
               Posted{' '}

@@ -11,7 +11,16 @@ const AntContent = Layout.Content
 const Post = ({ post, allCategories }) => {
   const { html } = post
   const { tagSlugs, slug, categorySlug } = post.fields
-  const { tags, title, date, category } = post.frontmatter
+  const { tags, date, category } = post.frontmatter
+  let { title } = post.frontmatter
+  let externalLink = null
+
+  const isTitleLinkPattern = /(?=.*\[)(?=.*\])(?=.*\()(?=.*\))/i
+  if (isTitleLinkPattern.test(title)) {
+    const found = title.match(/\[(.*)]\((.*)\)/)
+    title = found[1]
+    externalLink = found[2]
+  }
 
   const categoryColor = getCategoryColor({ allCategories, category })
 
@@ -22,7 +31,7 @@ const Post = ({ post, allCategories }) => {
       </Link>
 
       <div className="">
-        <Content body={html} title={title} date={date} />
+        <Content body={html} title={title} date={date} externalLink={externalLink} />
       </div>
 
       <div className="">
