@@ -7,7 +7,6 @@ import { useSiteMetadata } from '../hooks'
 
 const PostTemplate = ({ data, pageContext }) => {
   const { title: siteTitle, subtitle: siteSubtitle, keywords } = useSiteMetadata()
-  console.log(data)
   const {
     title: postTitle,
     description: postDescription
@@ -19,6 +18,10 @@ const PostTemplate = ({ data, pageContext }) => {
       title={`${postTitle} - ${siteTitle}`}
       description={metaDescription}
       keywords={keywords}
+      article={{
+        title: postTitle,
+        description: metaDescription
+      }}
     >
       <Sidebar hideMobile={true} />
       <Post post={data.markdownRemark} allCategories={pageContext.allCategories} />
