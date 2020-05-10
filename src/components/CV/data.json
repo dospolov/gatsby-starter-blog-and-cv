@@ -380,5 +380,35 @@
       "degree": "Master's Degree, Computer Science And Information Technologies, Software and computing systems (software engineer)"
     }
   ],
+  "recommendations": [
+    {
+      "name": "Alexey Morozov",
+      "jobTitle": "Delivery Manager",
+      "photo": "alex.jpg",
+      "linkedin": "https://www.linkedin.com/in/morozovalexey/",
+      "text": "I've worked with or around Marat at N-iX for about a year and I've been consistently impressed with his passion and drive for quality software. He strives for excellence in all he does is able to build quality into everything he works on.\n\n Moreover, we've been working together on several projects before N-iX and Marat led all of them to a production-ready solution that was scalable and ready to bring value to the business. As a Technical Lead Marat was able to take the idea from Stakeholders, introduce decomposition and deliver the end-solution. He was responsible for technical excellence and people management within the team. He guided everyone towards one end goal!"
+    },
+    {
+      "name": "Nikolay Mirkula",
+      "jobTitle": "Software Engineer",
+      "photo": "nick.jpg",
+      "linkedin": "https://www.linkedin.com/in/nikolay-mirkula-bb0b9ab6/",
+      "text": "Marat is an amazing professional, who brings all of the skills and expertise in programming and web development. His productivity and ambition sets a great example for the rest of the team. It was indeed a wonderful thing to work with him as the Lead Frontend Engineer at Moqod company.\n\n As a colleague, I recommend him to other institutions who may want to hire his most treasured skills"
+    },
+    {
+      "name": "Michael Sebastiyan",
+      "jobTitle": "Senior Software Engineer",
+      "photo": "mike.jpg",
+      "linkedin": "https://www.linkedin.com/in/msebastiyan/",
+      "text": "Marat is an excellent software engineer. He's very passionate about tech, building great user experiences, and improving the project codebase. He's a very high value add to every team he works on."
+    },
+    {
+      "name": "Sergii Kalashnykov",
+      "jobTitle": "Test Engineer",
+      "photo": "sergii.jpg",
+      "linkedin": "https://www.linkedin.com/in/skalashnikov/",
+      "text": "It was a pleasure working with Marat. He is a very talented passionate JavaScript developer, and a good friend. During that time I was impressed with his skill set and the way he could think through problems and find a solution for them. I would be happy to work with him again in the future."
+    }
+  ],
   "footer": "Dospolov.com © 2020"
 }
