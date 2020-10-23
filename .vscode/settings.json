@@ -13,9 +13,7 @@
     "titleBar.inactiveForeground": "#e7e7e799",
     "statusBar.background": "#101304",
     "statusBarItem.hoverBackground": "#333d0d",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBar.border": "#101304",
-    "titleBar.border": "#101304"
+    "statusBar.foreground": "#e7e7e7"
   },
   "peacock.color": "#101304",
   "editor.defaultFormatter": "esbenp.prettier-vscode",

@@ -1,5 +1,5 @@
 module.exports = {
-  url: 'https://dospolov.com',
+  url: 'https://gatsby-starter-blog-and-cv.netlify.app',
   pathPrefix: '/',
   title: 'Blog by Marat Dospolov',
   keywords:
